@@ -56,6 +56,7 @@ nav{
             position: absolute;
             bottom: 0;
             width: 100%;
+            display: block;
             text-align: center;
             opacity: 0;
             transition: all 0.3s ease-out;
@@ -64,22 +65,25 @@ nav{
             &::after{
                 content: "HOME";
             }
+        
         }
-        a.about-link{
+        
+        
+    }
+    a.about-link{
             &:after{
-                content: "ABOUT";
+                content: 'ABOUT';
             }
         }
         a.contact-link{
             &:after{
-                content: "CONTACT";
+                content: 'CONTACT';
             }
         }
+        
         a.active{
             svg{
                 color:#ff7900;
             }
         }
-        
-    }
 }
