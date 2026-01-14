@@ -71,19 +71,42 @@ nav{
         
     }
     a.about-link{
-            &:after{
-                content: 'ABOUT';
-            }
+        &:after{
+            content: 'ABOUT';
         }
-        a.contact-link{
-            &:after{
-                content: 'CONTACT';
-            }
+    }
+    a.contact-link{
+        &:after{
+            content: 'CONTACT';
         }
+    }
         
-        a.active{
-            svg{
-                color:#ff7900;
+    a.active{
+        svg{
+            color:#ff7900;
+        }
+    }   
+}
+    ul{
+        position:absolute;
+        display:block;
+        bottom: 20px;
+        width:100%;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin:0;
+        li{
+            a{
+                padding: 5px 0;
+                display: block;
+                font-size: 13px;
+                line-height: 14px;
+                
+                &:hover svg{
+                    color:#ff7900;
+                }
+                
             }
         }
-}
+    }
