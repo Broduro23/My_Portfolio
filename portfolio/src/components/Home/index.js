@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import{useState} from 'react'
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect } from 'react';
+import Logo from './Logo'
+
 
 const Home =()=>{
 
@@ -32,6 +34,7 @@ const Home =()=>{
             <h2>This is my Portfolio</h2>
             <Link to="/contact" className="flat-button">Contact Me</Link>      
         </div>
+        <Logo/>
     </div>
      
     );
